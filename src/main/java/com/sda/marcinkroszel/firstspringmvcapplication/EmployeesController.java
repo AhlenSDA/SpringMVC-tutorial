@@ -1,6 +1,5 @@
 package com.sda.marcinkroszel.firstspringmvcapplication;
 
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,9 +20,9 @@ public class EmployeesController {
     public List<Employee> getEmployees() {
         List<Employee> result = new ArrayList<>();
 
-        result.add(new Employee("Jan", "Kowalski", new BigDecimal("3000,99")));
-        result.add(new Employee("Zbigniew", "Nowakowski", new BigDecimal("3500,50")));
-        result.add(new Employee("Agnieszka", "Drozdowska", new BigDecimal("4000,10")));
+        result.add(new Employee("Jan", "Kowalski", new BigDecimal("3000.99")));
+        result.add(new Employee("Zbigniew", "Nowakowski", new BigDecimal("3500.50")));
+        result.add(new Employee("Agnieszka", "Drozdowska", new BigDecimal("4000.10")));
 
         return result;
     }
